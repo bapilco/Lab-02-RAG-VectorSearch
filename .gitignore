@@ -1,0 +1,41 @@
+# Credenciales y configuracion local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Entornos y artefactos de Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Cachés y herramientas de desarrollo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Archivos temporales y del sistema
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Datos efimeros de servicios locales (Qdrant en Docker)
+qdrant_storage/
+qdrant_data/
