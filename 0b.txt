@@ -1,0 +1,9 @@
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch>   python -c "from rag_pipeline import RagPipeline; p = RagPipeline(); p.ingest('ejemplos',
+>>   chunk_tokens=900)"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████████████████████████| 199/199 [00:00<00:00, 2870.73it/s]
+AVISO ingesta: chunk_tokens=900 supera el tope del modelo (128 tokens): lo que pase de 126 tokens no llega al índice —el MiniLM lo trunca en silencio; la H200 rechaza la petición—.
+AVISO ingesta: instructivo_escaneado.pdf: 0 caracteres útiles en 2 página(s). ¿Escaneado o fotografiado?NO se indexa: sin texto no hay nada que recuperar (OCR aparte).
+ingesta: nimbus_gastos.md: 1 página(s), 294 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_remoto.md: 1 página(s), 296 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_vacaciones.md: 1 página(s), 363 caracteres útiles → 1 fragmento(s)
