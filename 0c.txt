@@ -1,0 +1,56 @@
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch> .venv\Scripts\python.exe rag_pipeline.py "¿cuál es la política de mascotas?"  
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 2001.76it/s]
+embeddings: local · sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 · tope 128 tokens · Qdrant :memory:
+AVISO ingesta: instructivo_escaneado.pdf: 0 caracteres útiles en 2 página(s). ¿Escaneado o fotografiado? NO se indexa: sin texto no hay nada querecuperar (OCR aparte).
+ingesta: nimbus_gastos.md: 1 página(s), 294 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_remoto.md: 1 página(s), 296 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_vacaciones.md: 1 página(s), 363 caracteres útiles → 1 fragmento(s)
+indexados 3 fragmentos de 3 documento(s)
+  0.058  nimbus_gastos.md / nimbus_gastos-0000  # Política de reembolso de gastos de NimbusSoft Los gastos de viaje se reembolsa…
+  0.032  nimbus_remoto.md / nimbus_remoto-0000  # Política de trabajo remoto de NimbusSoft El trabajo remoto está permitido hast…
+  -0.033  nimbus_vacaciones.md / nimbus_vacaciones-0000  # Política de vacaciones de NimbusSoft Los empleados a tiempo completo acumulan …
+
+[modo inspección (sin clave ni Ollama)] abstuvo=None
+[modo inspección: no hay clave de API ni Ollama; este es el prompt]
+Responde usando solo el contexto recuperado.
+Si el contexto no contiene la respuesta, di exactamente: "El corpus no contiene información suficiente."
+
+Contexto:
+[1] nimbus_gastos.md / nimbus_gastos-0000
+# Política de reembolso de gastos de NimbusSoft Los gastos de viaje se reembolsan presentando factura dentro de los 30 días posteriores al gasto. El límite diario de alimentación en viajes es de 45 USD. Los pasajes aéreos deben comprarse en clase económica salvo vuelos de más de 8 horas, donde se permite económica premium con aprobación del gerente de área.
+
+[2] nimbus_remoto.md / nimbus_remoto-0000
+# Política de trabajo remoto de NimbusSoft El trabajo remoto está permitido hasta 3 días por semana para todos los roles excepto soporte de infraestructura on-site. Los días remotos se coordinan con el líder de equipo. Para trabajar desde el exterior del país se requiere aprobación de Recursos Humanos con 30 días de anticipación y un máximo de 60 días por año.
+
+[3] nimbus_vacaciones.md / nimbus_vacaciones-0000
+# Política de vacaciones de NimbusSoft Los empleados a tiempo completo acumulan 1.5 días de vacaciones por mes t
+
+
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch> .venv\Scripts\python.exe rag_pipeline.py "¿qué exige el instructivo de prácticas de campo sobre el seguro de accidentes?"  
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 2462.14it/s]
+embeddings: local · sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 · tope 128 tokens · Qdrant :memory:
+AVISO ingesta: instructivo_escaneado.pdf: 0 caracteres útiles en 2 página(s). ¿Escaneado o fotografiado? NO se indexa: sin texto no hay nada querecuperar (OCR aparte).
+ingesta: nimbus_gastos.md: 1 página(s), 294 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_remoto.md: 1 página(s), 296 caracteres útiles → 1 fragmento(s)
+ingesta: nimbus_vacaciones.md: 1 página(s), 363 caracteres útiles → 1 fragmento(s)
+indexados 3 fragmentos de 3 documento(s)
+  0.229  nimbus_remoto.md / nimbus_remoto-0000  # Política de trabajo remoto de NimbusSoft El trabajo remoto está permitido hast…
+  0.171  nimbus_gastos.md / nimbus_gastos-0000  # Política de reembolso de gastos de NimbusSoft Los gastos de viaje se reembolsa…
+  0.099  nimbus_vacaciones.md / nimbus_vacaciones-0000  # Política de vacaciones de NimbusSoft Los empleados a tiempo completo acumulan …
+
+[modo inspección (sin clave ni Ollama)] abstuvo=None
+[modo inspección: no hay clave de API ni Ollama; este es el prompt]
+Responde usando solo el contexto recuperado.
+Si el contexto no contiene la respuesta, di exactamente: "El corpus no contiene información suficiente."
+
+Contexto:
+[1] nimbus_remoto.md / nimbus_remoto-0000
+# Política de trabajo remoto de NimbusSoft El trabajo remoto está permitido hasta 3 días por semana para todos los roles excepto soporte de infraestructura on-site. Los días remotos se coordinan con el líder de equipo. Para trabajar desde el exterior del país se requiere aprobación de Recursos Humanos con 30 días de anticipación y un máximo de 60 días por año.
+
+[2] nimbus_gastos.md / nimbus_gastos-0000
+# Política de reembolso de gastos de NimbusSoft Los gastos de viaje se reembolsan presentando factura dentro de los 30 días posteriores al gasto. El límite diario de alimentación en viajes es de 45 USD. Los pasajes aéreos deben comprarse en clase económica salvo vuelos de más de 8 horas, donde se permite económica premium con aprobación del gerente de área.
+
+[3] nimbus_vacaciones.md / nimbus_vacaciones-0000
+# Política de vacaciones de NimbusSoft Los empleados a tiempo completo acumulan 1.5 días de vacaciones por mes t

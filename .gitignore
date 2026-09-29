@@ -40,3 +40,5 @@ Thumbs.db
 # Datos efimeros de servicios locales (Qdrant en Docker)
 qdrant_storage/
 qdrant_data/
+
+corpus/

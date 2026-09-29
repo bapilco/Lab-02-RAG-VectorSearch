@@ -1,0 +1,78 @@
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch> python rag_pipeline.py "Que es una compuerta AND y cual es su comportamiento logico?"
+embeddings: h200 · BAAI/bge-m3 · tope 8192 tokens · Qdrant http://localhost:6333
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 2802584694000), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 2802584694000), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 2802584694000), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 2802584694000), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 2802584694000), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 2802584694000), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (59562 > 8192). Running this sequence through the model will result in indexing errors
+ingesta: [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf: 93 página(s), 168399 caracteres útiles → 146 fragmento(s)
+ingesta: CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA.pdf: 35 página(s), 5486 caracteres útiles → 5 fragmento(s)
+ingesta: elctronicabasica-1.pdf: 94 página(s), 89968 caracteres útiles → 69 fragmento(s)
+ingesta: Manual Electrónica.pdf: 23 página(s), 42602 caracteres útiles → 32 fragmento(s)
+ingesta: Sistemas_digitales.pdf: 78 página(s), 52593 caracteres útiles → 41 fragmento(s)
+indexados 293 fragmentos de 5 documento(s)
+  0.644  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0013  , para cualquiera de las cuatro posibles condiciones de entrada, podemos generar…
+  0.622  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0049  a la señal A de una manera exacta. En contras- te, cuando las compuertas inverso…
+  0.609  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0012  Cambie cada compuerta AND en la fi gura 4-1(a) por una compuerta NAND. Determine…
+  0.594  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0050  en una compuerta XNOR. Cuando B y C son distintas, la compuerta XNOR envía un ni…
+  0.592  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0048  (d) 1. Observe que se produce un 1 en E sólo cuando aparece un número impar de 1…
+
+[ollama:qwen3:1.7b] abstuvo=False
+La compuerta AND es una función lógica que devuelve un valor lógico 1 solo cuando **ambas entradas son 1**. Su comportamiento es:  
+- **Salida 1** si ambas entradas son 1.  
+- **Salida 0** si al menos una de las entradas es 0.  
+
+Este comportamiento se refleja en los ejemplos del contexto, donde la compuerta AND genera un resultado 1 solo para combinaciones específicas deentradas (como A=0, B=1 o A=1, B=0). La generalización es que la compuerta AND es una operación lógica que "solo" devuelve 1 cuando **todas las entradas son 1**.
+C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch\.venv\Lib\site-packages\qdrant_client\qdrant_client.py:169:RuntimeWarning: Unable to close http connection. Connection was interrupted on the server side
+
+
+
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch> python rag_pipeline.py "Que establece la ley de ohm?"                                
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+embeddings: h200 · BAAI/bge-m3 · tope 8192 tokens · Qdrant http://localhost:6333
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1740094090480), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1740094090480), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1740094090480), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1740094090480), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1740094090480), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1740094090480), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (59562 > 8192). Running this sequence through the model will result in indexing errors
+ingesta: [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf: 93 página(s), 168399 caracteres útiles → 146 fragmento(s)
+ingesta: CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA.pdf: 35 página(s), 5486 caracteres útiles → 5 fragmento(s)
+ingesta: elctronicabasica-1.pdf: 94 página(s), 89968 caracteres útiles → 69 fragmento(s)
+ingesta: Manual Electrónica.pdf: 23 página(s), 42602 caracteres útiles → 32 fragmento(s)
+ingesta: Sistemas_digitales.pdf: 78 página(s), 52593 caracteres útiles → 41 fragmento(s)
+indexados 293 fragmentos de 5 documento(s)
+  0.476  CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA.pdf / CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA-0001  https://www.youtube.com/watch?v=YjVZLghzKk0 V= J/C [page=8] Analogía circuito e…
+  0.471  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0143  0); 2. (a) z /H11005 botones_pulsar[5]; (b) z </H11005 botones_pulsar(5); 3. STD…
+  0.468  Manual Electrónica.pdf / Manual Electrónica-0007  desprendidos de su [page=7] electronica basica 7 • Tensión umbral, de codo o de …
+  0.456  elctronicabasica-1.pdf / elctronicabasica-1-0010  Ω 20 Ω A B RL RTH= 14 Ω VTH= 20 V A B RL VTH = • 100= 20 V 5 10+5 VTH = + 10 = 1…
+  0.443  CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA.pdf / CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA-0003  [page=22] Tipos de transistores [page=23] Quese puede hacer con el transistor A…
+
+[ollama:qwen3:1.7b] abstuvo=False
+La ley de Ohm establece que la tensión (V) en un circuito eléctrico es igual al producto de la corriente (I) que fluye por él y la resistencia (R) del circuito, es decir, $ V = I \cdot R $.
+C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch\.venv\Lib\site-packages\qdrant_client\qdrant_client.py:169:RuntimeWarning: Unable to close http connection. Connection was interrupted on the server side
+
+(.venv) PS C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch> python rag_pipeline.py "Que representa una tabla de verdad?"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+embeddings: h200 · BAAI/bge-m3 · tope 8192 tokens · Qdrant http://localhost:6333
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1945881324784), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1945881324784), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1945881324784), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1945881324784), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/HHFANI+Universal-GreekwithMathPi', '/Encoding': IndirectObject(363, 0, 1945881324784), '/FirstChar': 2, '/FontDescriptor': IndirectObject(362, 0, 1945881324784), '/LastChar': 2, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [778]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (59562 > 8192). Running this sequence through the model will result in indexing errors
+ingesta: [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf: 93 página(s), 168399 caracteres útiles → 146 fragmento(s)
+ingesta: CURSO CONCEPTOS BÁSICOS DE ELECTRÓNICA.pdf: 35 página(s), 5486 caracteres útiles → 5 fragmento(s)
+ingesta: elctronicabasica-1.pdf: 94 página(s), 89968 caracteres útiles → 69 fragmento(s)
+ingesta: Manual Electrónica.pdf: 23 página(s), 42602 caracteres útiles → 32 fragmento(s)
+ingesta: Sistemas_digitales.pdf: 78 página(s), 52593 caracteres útiles → 41 fragmento(s)
+indexados 293 fragmentos de 5 documento(s)
+  0.620  Sistemas_digitales.pdf / Sistemas_digitales-0017  los distintos estados de entrada que pueden llegar a tener los c ircuitos digita…
+  0.597  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0102  para describir su operación. La tabla de verdad para este diseño se presentó en …
+  0.561  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0101  11002 32 TO 31; TABLA 4-9 Tipos de datos comunes en VHDL. [page=65] PREGUNTAS DE…
+  0.542  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0104  entrada puede representarse mediante bits_ent[ ]. Observe que, a medida que list…
+  0.536  [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4.pdf / [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap4-0022  más entradas son demasiado complicados y se resuelven mejor mediante el uso de u…
+
+[ollama:qwen3:1.7b] abstuvo=False
+La tabla de verdad representa todas las combinaciones posibles de entradas de un circuito lógico y sus correspondientes valores de salida. Cada fila muestra una combinación de entradas y el resultado que produce el circuito para esa configuración.
+C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSearch\.venv\Lib\site-packages\qdrant_client\qdrant_client.py:169:RuntimeWarning: Unable to close http connection. Connection was interrupted on the server side
+
+
+  > Se utilizó fragmentación fija de 512 tokens del tokenizador de bge-m3, con un solapamiento de 102 tokens (20%). Aunque bge-m3 admite hasta
+  > 8192 tokens, se eligió un tamaño menor para mantener fragmentos centrados en definiciones, relaciones y fórmulas de electrónica. El
+  > solapamiento conserva contexto cuando una explicación cruza el límite entre dos fragmentos.
