@@ -76,3 +76,30 @@ C:\Users\User\Documents\ALEXANDER\USFQ\IA_GENERATIVA\Taller2\Lab-02-RAG-VectorSe
   > Se utilizó fragmentación fija de 512 tokens del tokenizador de bge-m3, con un solapamiento de 102 tokens (20%). Aunque bge-m3 admite hasta
   > 8192 tokens, se eligió un tamaño menor para mantener fragmentos centrados en definiciones, relaciones y fórmulas de electrónica. El
   > solapamiento conserva contexto cuando una explicación cruza el límite entre dos fragmentos.
+
+
+
+  Se eligió chunk_tokens=512 con overlap_tokens=102 porque fue la configuración que recuperó evidencia más específica y directamente relacionada
+  con las preguntas, aun cuando generó más embeddings.
+
+  En los tres experimentos, el corpus produjo:
+
+   Configuración    Embeddings en Qdrant    Observación
+  ━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   512 / 102                         293    Mayor granularidad y fragmentos más enfocados.
+  ───────────────  ──────────────────────  ──────────────────────────────────────────────────────────────────────────────────────────────────────
+   1000 / 200                        149    Menos vectores, pero respuestas más largas y con información periférica.
+  ───────────────  ──────────────────────  ──────────────────────────────────────────────────────────────────────────────────────────────────────
+   2048 / 409                         73    Menor tamaño de índice, pero recuperación más difusa; para Ley de Ohm el primer resultado hablaba de
+                                            fotones y no aportaba evidencia directa.
+
+  La prueba de Ley de Ohm ilustra la decisión: con chunks de 512, el primer resultado recuperado contenía explícitamente la fórmula V = R·I y
+  obtuvo un puntaje de 0.476. Con 2048 tokens, el resultado mejor posicionado no era pertinente, aunque el modelo generó una respuesta correcta
+  por conocimiento previo o por contexto menos directo.
+
+  Por ello, 512 tokens ofrece un mejor equilibrio para este corpus de electrónica: cada fragmento suele conservar una definición, fórmula o
+  explicación concreta, sin mezclar demasiados temas. El solapamiento de 102 tokens, equivalente al 20%, evita perder continuidad cuando una
+  explicación o fórmula queda entre dos fragmentos.
+
+  Aunque 512 genera más embeddings y hace el índice más grande, se priorizó la precisión de recuperación y la trazabilidad de la respuesta sobre
+  reducir el número de vectores.
