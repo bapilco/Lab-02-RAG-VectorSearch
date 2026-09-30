@@ -1,0 +1,11 @@
+id,tipo,respondible,modelo_embeddings,k,posicion,hit,reciprocal_rank,score_top1,abstuvo,generador,retrieved_ids
+1,simple,True,BAAI/bge-m3,3,,False,0.0,0.6251712,False,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0004 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0003 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0005
+2,simple,True,BAAI/bge-m3,3,,False,0.0,0.6920102,False,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0083 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0085 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0084
+3,simple,True,BAAI/bge-m3,3,1,True,1.0,0.666632,False,ollama:qwen3:1.7b,Sistemas_digitales-0016 Sistemas_digitales-0018 Sistemas_digitales-0015
+4,simple,True,BAAI/bge-m3,3,,False,0.0,0.73668766,False,ollama:qwen3:1.7b,elctronicabasica-1-0024 elctronicabasica-1-0023 Manual Electrónica-0005
+5,multi-chunk,True,BAAI/bge-m3,3,1,True,1.0,0.72966915,False,ollama:qwen3:1.7b,Sistemas_digitales-0024 Sistemas_digitales-0023 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0001
+6,multi-chunk,True,BAAI/bge-m3,3,1,True,1.0,0.7438139,False,ollama:qwen3:1.7b,Sistemas_digitales-0020 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0022 Sistemas_digitales-0021
+7,multi-chunk,True,BAAI/bge-m3,3,2,True,0.5,0.7366196,False,ollama:qwen3:1.7b,elctronicabasica-1-0051 Manual Electrónica-0029 elctronicabasica-1-0056
+8,negativo,False,BAAI/bge-m3,3,,,,0.36594078,True,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0077 elctronicabasica-1-0014 elctronicabasica-1-0013
+9,negativo,False,BAAI/bge-m3,3,,,,0.43418625,True,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0107 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0108 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0121
+10,adversarial,True,BAAI/bge-m3,3,,False,0.0,0.67579126,False,ollama:qwen3:1.7b,elctronicabasica-1-0024 elctronicabasica-1-0023 elctronicabasica-1-0051
