@@ -1,0 +1,11 @@
+id,tipo,respondible,modelo_embeddings,k,posicion,hit,reciprocal_rank,score_top1,abstuvo,generador,retrieved_ids
+1,simple,True,BAAI/bge-m3,3,2,True,0.5,0.03225806451612903,False,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0003 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0121 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0002
+2,simple,True,BAAI/bge-m3,3,,False,0.0,0.03225806451612903,False,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0085 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0083 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0084
+3,simple,True,BAAI/bge-m3,3,1,True,1.0,0.03252247488101534,False,ollama:qwen3:1.7b,Sistemas_digitales-0016 Sistemas_digitales-0015 Sistemas_digitales-0018
+4,simple,True,BAAI/bge-m3,3,,False,0.0,0.03278688524590164,False,ollama:qwen3:1.7b,elctronicabasica-1-0024 elctronicabasica-1-0023 Manual Electrónica-0005
+5,multi-chunk,True,BAAI/bge-m3,3,1,True,1.0,0.03252247488101534,False,ollama:qwen3:1.7b,Sistemas_digitales-0023 Sistemas_digitales-0024 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0001
+6,multi-chunk,True,BAAI/bge-m3,3,1,True,1.0,0.03252247488101534,False,ollama:qwen3:1.7b,Sistemas_digitales-0020 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0022 Sistemas_digitales-0019
+7,multi-chunk,True,BAAI/bge-m3,3,1,True,1.0,0.03252247488101534,False,ollama:qwen3:1.7b,Manual Electrónica-0029 elctronicabasica-1-0051 elctronicabasica-1-0054
+8,negativo,False,BAAI/bge-m3,3,,,,0.03028233151183971,True,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0077 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0005 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0013
+9,negativo,False,BAAI/bge-m3,3,,,,0.0315136476426799,True,ollama:qwen3:1.7b,[Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0033 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0019 [Tocci-2007] Sistemas_Digitales_Principios_y_Aplicaciones - Cap 4-0107
+10,adversarial,True,BAAI/bge-m3,3,3,True,0.3333333333333333,0.03278688524590164,False,ollama:qwen3:1.7b,elctronicabasica-1-0024 elctronicabasica-1-0023 Manual Electrónica-0005

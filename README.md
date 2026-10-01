@@ -47,6 +47,22 @@ Lab-02-RAG-VectorSearch/
 
 RAGAS, búsqueda híbrida y reranking son extensiones. Primero debe funcionar el baseline.
 
+## Extensión B: búsqueda híbrida (BM25 + densa + RRF)
+
+`hybrid_pipeline.py` conserva el corpus, embeddings, Qdrant y prompt del baseline. Añade
+BM25 sobre los mismos chunks y fusiona el top-20 denso con el top-20 léxico mediante
+Reciprocal Rank Fusion (RRF, `k=60`) antes de devolver el top-5. Sus puntajes son de RRF y
+no se comparan directamente con los puntajes de coseno del baseline.
+
+```bash
+python hybrid_pipeline.py "¿Qué es un dispositivo lógico programable?"
+python evaluation_hybrid.py --k 3 --csv resultados_hibrido_k3.csv
+python evaluation_hybrid.py --k 5 --csv resultados_hibrido_k5.csv
+```
+
+Cada ejecución de `evaluation_hybrid.py` vuelve a indexar el corpus en Qdrant y construye
+BM25 en memoria, para que ambos rankings correspondan exactamente a los mismos chunks.
+
 ## Las tres fallas que no fallan (Parte 0 del taller)
 
 La Parte 0 corre con el MiniLM de los notebooks **en tu máquina** (`EMBEDDING_BACKEND=local`):
